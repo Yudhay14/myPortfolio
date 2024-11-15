@@ -1,0 +1,69 @@
+/* Nafbar */
+.navbar {
+    background-color: white;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 25);
+    animation: awalmasuk 3ms 1ms;
+}
+.navbar-nav {
+    font-weight: 500;
+}
+
+section {
+    padding-top: 128px;
+}
+
+.Home h1{
+    font-size: 72px;
+}
+.Home h3{
+    font-size: 48px;
+}
+/* end navbar */
+
+/* bagian home / hero */
+.btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 5px 43px;
+    margin-top: 1rem;
+}
+.btn:hover {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    padding: 5px 43px;
+}
+
+#more-info a{
+    color: black;
+    font-weight: 600;
+}
+
+#more-info img{
+    width: 50px;
+    padding-top: 10px;
+    animation: 1.5s awalmasuk infinite;
+}
+
+#more-info {
+    display: flex;
+    align-items: center;
+    margin-top: 63px;
+    
+}
+/* end home / hero */
+
+
+/* keyframe */
+@keyframes awalmasuk {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+    0% {
+        transform: translateY(0);
+    }
+}
