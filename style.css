@@ -1,8 +1,14 @@
 /* Nafbar */
+html {
+ height: 3000px;
+}
 .navbar {
     background-color: white;
     box-shadow: 0 0 6px rgba(0, 0, 0, 25);
     animation: awalmasuk 3ms 1ms;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 .navbar-nav {
     font-weight: 500;
@@ -10,6 +16,7 @@
 
 section {
     padding-top: 128px;
+    position: relative;
 }
 
 .Home h1{
@@ -23,16 +30,11 @@ section {
 /* bagian home / hero */
 .btn {
     border: 2px solid black;
+    text-decoration: none;
     background-color: white;
     color: black;
     padding: 5px 43px;
     margin-top: 1rem;
-}
-.btn:hover {
-    border: 2px solid black;
-    background-color: black;
-    color: white;
-    padding: 5px 43px;
 }
 
 #more-info a{
@@ -55,6 +57,44 @@ section {
 /* end home / hero */
 
 
+/* about */
+.about-exp-item-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70PX
+}
+
+.about::before{
+    content: 'About';
+}
+section::before {
+    z-index: -1;
+    content: '';
+    font-size: 72px;
+    color: gray;
+    opacity: 0.65;            
+    font-weight: 600;
+    position: absolute;
+    top: 20px;
+    left: -60px;
+    
+}
+
+.about-exp-item-detail {
+    display: none;
+}
+
+.btn.button {
+    border: 2px solid rgb(5, 5, 5);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.btn.button:hover, .btn.button.active {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
 /* keyframe */
 @keyframes awalmasuk {
     0% {
