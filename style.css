@@ -25,6 +25,15 @@ section {
 .Home h3{
     font-size: 48px;
 }
+.Home .btn:hover{
+    border: 2px solid black;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px 43px;
+    margin-top: 1rem;
+
+}
 /* end navbar */
 
 /* bagian home / hero */
@@ -53,6 +62,9 @@ section {
     align-items: center;
     margin-top: 63px;
     
+}
+.Home img{
+    width: 100%;
 }
 /* end home / hero */
 
@@ -185,5 +197,82 @@ section::before {
     }
     0% {
         transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .Home img{
+        width: 60%;
+        margin-bottom: 32px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .Home div h3{
+        font-size: 30px;
+    }
+    .Home div h1{
+        font-size: 45px;
+        margin-bottom: 16px;
+    }
+    .Home div p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .Home .Home-btn{
+        text-align: center;
+    }
+    .about p{
+        font-size: 16px;
+        padding: 32px 24px;
+        text-align: center;
+
+    }
+    section::before{
+        font-size: 50px;
+        position: absolute;
+        top:80px;
+        left: 20px;
+    }
+    .about-exp-item-header h5{
+        font-size: 19px;
+        font-weight: 700;
+        padding: 10px 32px;
+    }
+    .about-exp-item-header p{
+        margin-top: 10px;
+    }
+
+    .about-exp-item-header .btn{
+        height: 35px;
+        font-display: flex;
+        
+    }
+    .work .col p{
+        font-size: 16px;
+        padding: 32px 20px;
+        text-align: center;
+    }
+
+    .work .work-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .work .work-img #work-3{
+        width: 100%;
+    }
+    .contact div p{
+        font-size: 16px;
+        padding: 32px 20px;
+        text-align: center;
+    }
+    .grup-img-contact{
+        display: flex;
+        flex-direction: column;
+        padding: 32px 60px;
+    }
+    .form-luar{
+        padding: 16px 36px;
     }
 }

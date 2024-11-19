@@ -2,9 +2,9 @@ function upDown(e) {
     const target=$(e.target)
 
     if($(target).hasClass("active")) {
-        $(target).html("More Info").removeClass("active")
+        $(target).html("More").removeClass("active")
     } else{
-        $(target).html("Less Info").addClass("active")
+        $(target).html("Less").addClass("active")
     }
     
 

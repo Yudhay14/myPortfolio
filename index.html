@@ -27,13 +27,13 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Work</a>
+              <a class="nav-link" href="#work">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -43,31 +43,33 @@
 
     <!-- Section atas -->
     <section id="Home" class="Home container">
-      <div class="row d-flex align-items-center">
-        <div class="col-8">
-          <h3 class="fw-semibold">Hi! Iam</h3>
+      <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+        <div class="col-12 col-md-8">
+          <h3 class="fw-semibold fs-md-4">Hi! Iam</h3>
           <h1 class="fw-bold px-3">Wira Yudha</h1>
           <p>I am Team Ledaer CC | Content Creator | Junior Wep Developer</p>
-          <a class="btn rounded-pill" href="images/arrow.svg"
+          <div class="Home-btn">
+            <a class="btn rounded-pill" href="images/arrow.svg"
             download>Resume</a>
+          </div>
         </div>
-        <div class="col-4">
-          <img src="images/me.png" style="width: 400px;" class="rounded-circle"
+        <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
+          <img src="images/me.png" class="rounded-circle"
             alt="Wira Yudha">
         </div>
       </div>
-      <div id="more-info"
-        class="d-flex justify-content-center flex-column text-center">
-        <a class="text-decoration-none" href="#bout">More Info</a>
+      <a href="#about" id="more-info"
+        class="text-decoration-none d-flex justify-content-center flex-column text-center">
+        <div class="text-dark fw-bold">More Info</div>
         <img src="images/arrow.svg" alt="arrow">
-      </div>
+      </a>
 
     </section>
     <!-- e d section atas -->
 
     <!-- section 2 -->
     <section id="about" class="about container">
-      <p>Hi, Welcome. Saya Wira, dimana selalu mengutamakan pencapaian terbaik yang bisa saya lakukan. Kerja cerdas, cepat dan teliti menjadi point penting yang saya bangun. Namun tidak lupa untuk selalu fokus dalam menyelesaikan segala project / tugas yang saya kerjakan. Pengalaman saya dibidang customer service cukup lama dan masih bekerja sebagai Team Leader CC Project XL Axiatadi PT. Vads Indonesia, namun saya juga sangat menyukai hal dibidang IT. Terutama dalam hal pembuatan program / web developer dan hal lainnya.</p>
+      <p>Hi, Welcome. Saya Wira, dimana selalu mengutamakan pencapaian terbaik yang bisa saya lakukan. Kerja cerdas, cepat dan teliti menjadi point penting yang saya bangun. Namun tidak lupa untuk selalu fokus dalam menyelesaikan segala project / tugas yang saya kerjakan. Pengalaman saya dibidang customer service cukup lama dan masih bekerja sebagai Team Leader CC Project XL Axiata di PT. Vads Indonesia, namun saya juga sangat menyukai hal dibidang IT. Terutama dalam hal pembuatan program / web developer dan hal lainnya.</p>
       <div class="about-exp">
         <div class="about-exp-item">
           <div class="about-exp-item-header">
@@ -75,7 +77,7 @@
               <h5>PT. Biru Fast Food Nusantara</h5>
               <p>Cashier A&W Restauran (2012-2013)</p>
             </div>
-            <button class="btn button rounded-pill" onclick="upDown(event)">More Info</button>
+            <button class="btn button rounded-pill" onclick="upDown(event)">More</button>
           </div>
           <p class="about-exp-item-detail">Bekerja sebagai kasir makanan cepat saji, melayani pelanggan dengan cepat, tepat, ramah, dan sesuai pesanan</p>
         </div>  
@@ -85,7 +87,7 @@
               <h5>PT. Adi Boga Cipta (HANAMASA)</h5>
               <p>Pelayan / Waiter HANAMASA Restauran (2012-2013)</p>
             </div>
-            <button class="btn button rounded-pill" onclick="upDown(event)">More Info</button>
+            <button class="btn button rounded-pill" onclick="upDown(event)">More</button>
           </div>
           <p class="about-exp-item-detail">Bekerja sebagai pelayan Restaurant, melayani dan memberikan pelayanan terbaik bagi pelanggan, memastikan apa yang dibutuhkan customer terpenuhi dan memberikan kenyamanan serta kebersihan outlet</p>
         </div>      
@@ -95,7 +97,7 @@
               <h5>PT. Vads Indonesia</h5>
               <p>Team Leader CC XL Axiata</p>
             </div>
-            <button class="btn button rounded-pill" onclick="upDown(event)">More Info</button>
+            <button class="btn button rounded-pill" onclick="upDown(event)">More</button>
           </div>
           <p class="about-exp-item-detail">Menganalisa setiap keluhan, dan memaintain KPI serta kinerja agent agar memberikan pelayanan yang baik bagi pelanggan</p>
         </div>          
@@ -109,7 +111,7 @@
         <div class="col">
           <p>Saya menyukai web program, walau web yang saya buat masih merupakan web simple namun saya masih tetap belajar, modifikasi dan ingin membuat hal-hal baru yang bebasis web, keinginan saya untuk menjadi seorang yang hebat dibidang web developer sangat tinggi, semoga saya bisa belajar lebih dari experience ditempat saya bekerja. Berikut merupakan web yang saya buat menggunakan HTML, CSS, Javascrip, dengan bantuan Bootstrap ataupun JQuerry.</p>
         </div>
-        <div class="col work-img">
+        <div class="col   work-img">
           <div id="work-1" class="work-img-item">
               <img src="images/work-1.png" alt="" id="work-1">
           </div>
@@ -125,24 +127,24 @@
     <!-- end section work -->
      <section id="contact" class="contact container">
         <div class="row d-flex align-items-center gap-5">
-            <div class="col">
+            <div class="col-12 col-lg-6">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit inventore ex nostrum, earum dicta tempore rem placeat fugiat at nam, consequatur voluptatibus dolorum enim aliquid autem. Nostrum quis a saepe aliquid atque facere maiores placeat assumenda autem, quam officia, quisquam, temporibus veniam delectus veritatis quo ratione iste nulla perspiciatis incidunt!</p>
-                <div class="row">
+                <div class="row grup-img-contact">
                     <div class="col d-flex align-items-center">
-                      <img src="images/Facebook.svg" alt="Facebook">
-                      <p>Wira Yudha</p>
+                      <img  class="w-25" src="images/Facebook.svg" alt="Facebook">
+                      <p class="mb-0 ms-2">Wira Yudha</p>
                     </div>
                     <div class="col d-flex align-items-center">
-                      <img src="images/Instagram.svg" alt="Instagram">
-                      <p>@Wiira_yudha</p>
+                      <img id="contact-img" class="w-25" src="images/Instagram.svg" alt="Instagram">
+                      <p class="mb-0 ms-2">@Wiira_yudha</p>
                     </div>
                     <div class="col d-flex align-items-center">
-                      <img src="images/Twitter.svg" alt="Twitter">
-                      <p>@Wiira_yudha</p>
+                      <img class="w-25 img-detail" src="images/Twitter.svg" alt="Twitter">
+                      <p class="mb-0 ms-2">@Wiira_yudha</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-5 form-luar">
               <form class="contact-form" onsubmit="onFormSubmit(event)">
                 <div class="mb-4">
                   <label for="inp_email" class="form-label">Email address</label>
