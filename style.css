@@ -8,7 +8,7 @@ html {
     animation: awalmasuk 3ms 1ms;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 9999;
 }
 .navbar-nav {
     font-weight: 500;
@@ -157,7 +157,24 @@ section::before {
 #work-3:hover:after{
     content: 'Sofware Project';
 }
+/* end work */
 
+/* contact */
+.contact{
+    padding-bottom: 32px;
+}
+.contact:before{
+    content: 'Contact';
+}
+.contact-form {
+    border: 1px solid black;
+    padding: 64px 32px;
+}
+
+.form-label{
+    font-weight: 500;
+}
+/* end contact */
 /* keyframe */
 @keyframes awalmasuk {
     0% {
